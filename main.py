@@ -1,15 +1,14 @@
-score = int(input("Enter your score: "))
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+operation =input("Enter the operation (+, -, *, /): ")
 
-if score >= 90:
-    print("Grade: A")
-elif score >= 80:
-    print("Grade: B")
-elif score >= 70:
-    print("Grade: C")   
-elif score >= 60:
-    print("Grade: D")
-else:
-    print("Grade: F")
+if operation == "+":
+    result = number1 + number2
+elif operation == "-":
+    result = number1 - number2
+elif operation == "*":
+    result = number1 * number2
+elif operation == "/":
+    result = number1 / number2
 
-    
-            
+print(f"The result is {result}")
